@@ -1,4 +1,6 @@
 import './App.css'
+import FormAddFriend from './components/FormAddFriend';
+import FriendsList from './components/FriendsList';
 
 
 const initialFriends = [
@@ -25,9 +27,15 @@ const initialFriends = [
 function App() {
 
   return (
-    <>
+    <div className='app'>
+      <div className='sidebar'>
+        <FriendsList initialFriends={initialFriends}/>
+        <FormAddFriend/>
+
+        
+      </div>
       
-    </>
+    </div>
   )
 }
 
